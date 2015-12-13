@@ -30,8 +30,9 @@ Item {
             font.pixelSize: 32
             text: title
             anchors.verticalCenter: parent.verticalCenter
-            anchors.fill: parent
-            rotation: (parent.rotation/60) * 10
+            anchors.horizontalCenter: parent.horizontalCenter
+            //anchors.fill: parent
+            rotation: (index-3) * -60
         }
         MaskedMouseArea {
             id: thingArea
